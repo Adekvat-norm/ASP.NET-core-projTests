@@ -1,0 +1,30 @@
+﻿@model Form
+@{
+    ViewData["Title"] = "Форма ввода";
+}
+
+<h1>Форма ввода</h1>
+
+<form method="post" asp-controller="Form" asp-action="Check">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+
+    <label asp-for="DatePuchase"></label>
+    <input asp-for="DatePuchase" />
+    <span asp-validation-for="DatePuchase"></span>
+
+    <label asp-for="Price"></label>
+    <input asp-for="Price" />
+    <span asp-validation-for="Price"></span>
+
+    <label asp-for="Manufacturer"></label>
+    <input asp-for="Manufacturer" />
+    <span asp-validation-for="Manufacturer"></span>
+
+    <label asp-for="Quantity_purchase"></label>
+    <input asp-for="Quantity_purchase" />
+    <span asp-validation-for="Quantity_purchase"></span>
+
+    <input type="submit" value="Записать" />
+</form>
